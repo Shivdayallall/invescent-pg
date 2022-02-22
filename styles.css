@@ -15,14 +15,6 @@ body {
   background-color: #252a48;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-
-
 .slogan {
   font-family: "Roboto Serif", sans-serif;
   line-height: 1.5;
@@ -41,7 +33,6 @@ body {
 }
 
 .navbar-light .navbar-brand:hover {
-  /* color: #afafaf; */
   color: ghostwhite;
 }
 
@@ -95,6 +86,10 @@ body {
   text-align: center;
   background-color: gainsboro;
   position: relative;
+}
+
+.featureCard {
+  width: 100%;
 }
 
 .card1 {
@@ -214,8 +209,7 @@ textarea {
 }
 
 .submit-btn:hover {
-   background-color: #2d3357;
-
+  background-color: #2d3357;
 }
 
 .contact-form button {
@@ -271,64 +265,107 @@ button.button:hover {
 }
 
 /* Media queries */
-/* For extremely small screen devices (595px and below) */
-@media only screen and (max-width: 595px) {
-    .slogan {
-        margin: 0 15%;
-    }
-    
-    .download-btn {
-        margin: 5% 15%;
-    }
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .container-fluid {
+    padding: 3% 10% 7%;
+    color: gainsboro;
+  }
 
-    .card1 {
-        margin: 10px auto;
-    }
+  .slogan {
+    margin-left: 11%;
+  }
 
-    .review-text {
-        font-size: 2rem;
-        margin-bottom: 15%;
-    }
+  .download-btn {
+    margin-left: 11%;
+  }
 
-    .title-img {
-      display: none;
-    }
+  .title-img {
+    display: none;
+  }
+
+  .featureCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1 {
+    width: 230px;
+    height: 400px;
+    margin: 10px 0;
+  }
+
+  .cardImg {
+    width: 100px;
+    height: 220px;
+  }
+
+  .review-text {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    height: 8rem;
+  }
+
+  .review-poster {
+    margin-top: 50%;
+  }
 }
- 
-/* Small screen devices (600px and above) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-    .slogan {
-        margin-left: 15%;
-    }
-    
-    .download-btn {
-        margin: 5% 15%;
-    }
 
-    .card1 {
-        margin: 10px auto;
-    }
-
-    .review-text {
-        font-size: 2rem;
-        margin-bottom: 15%;
-    }
-
-    .title-img {
-      display: none;
-    }
- 
-}
- 
-/* Medium screen devices (768px and above) */
-@media only screen and (min-width: 768px) and (max-width: 887px) {
+@media only screen and (min-width: 375px) and (max-width: 424px) {
   .slogan {
     margin: 0 15%;
   }
 
   .download-btn {
     margin: 5% 15%;
+  }
+
+  .card1 {
+    margin: 10px auto;
+  }
+
+  .review-text {
+    font-size: 2rem;
+    margin-bottom: 15%;
+  }
+
+  .title-img {
+    display: none;
+  }
 }
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .slogan {
+    margin-left: 15%;
+  }
+
+  .download-btn {
+    margin: 5% 15%;
+  }
+
+  .card1 {
+    margin: 10px auto;
+  }
+
+  .review-text {
+    font-size: 2rem;
+    margin-bottom: 15%;
+  }
+
+  .title-img {
+    display: none;
+  }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .slogan {
+    margin: 0 15%;
+  }
+
+  .download-btn {
+    margin: 5% 15%;
+  }
 
   .card1 {
     width: 300px;
@@ -352,11 +389,10 @@ button.button:hover {
     background-color: gainsboro;
     position: relative;
   }
-
 }
- 
+
 /* Big screen devices (889px and above) */
-@media only screen and (min-width: 889px) and (max-width: 1199px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .slogan {
     font-family: "Roboto Serif", sans-serif;
     line-height: 1.5;
@@ -382,18 +418,17 @@ button.button:hover {
   .review-text {
     font-size: 2rem;
     margin-bottom: 15%;
- }
+  }
 
- .title-img {
+  .title-img {
     width: 18%;
     transform: rotate(25deg);
     position: absolute;
     right: 10%;
     bottom: 20%;
-  } 
+  }
 }
- 
-/* Extra big screen devices (1200px and above) */
-@media only screen and (min-width: 1200px) {
 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1440px) {
 }
