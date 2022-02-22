@@ -320,17 +320,31 @@ button.button:hover {
     margin: 5% 15%;
   }
 
+  .featureCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .card1 {
-    margin: 10px auto;
+    width: 250px;
+    height: 440px;
+    margin: 10px 0;
+  }
+
+  .cardImg {
+    width: 130px;
+    height: 250px;
   }
 
   .review-text {
     font-size: 2rem;
-    margin-bottom: 15%;
+    line-height: 1.2;
+    height: 8rem;
   }
 
-  .title-img {
-    display: none;
+  .review-poster {
+    margin-top: 50%;
   }
 }
 
