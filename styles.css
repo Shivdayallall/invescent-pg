@@ -268,7 +268,6 @@ button.button:hover {
 @media only screen and (min-width: 320px) and (max-width: 374px) {
   .container-fluid {
     padding: 3% 10% 7%;
-    color: gainsboro;
   }
 
   .slogan {
@@ -320,6 +319,10 @@ button.button:hover {
     margin: 5% 15%;
   }
 
+  .title-img {
+    display: none;
+  }
+
   .featureCard {
     display: flex;
     flex-direction: column;
@@ -357,13 +360,31 @@ button.button:hover {
     margin: 5% 15%;
   }
 
+  .featureCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .card1 {
-    margin: 10px auto;
+    width: 250px;
+    height: 440px;
+    margin: 10px 0;
+  }
+
+  .cardImg {
+    width: 130px;
+    height: 300px;
   }
 
   .review-text {
     font-size: 2rem;
-    margin-bottom: 15%;
+    line-height: 1.2;
+    height: 8rem;
+  }
+
+  .review-poster {
+    margin-top: 50%;
   }
 
   .title-img {
@@ -377,42 +398,52 @@ button.button:hover {
     margin: 0 15%;
   }
 
+  .title-img {
+    display: none;
+   }
+
   .download-btn {
     margin: 5% 15%;
   }
 
+  .featureCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .card1 {
-    width: 300px;
-    height: 600px;
+    width: 262px;
+    height: 550px;
     background-color: #252a48;
     border-radius: 25px;
-    margin: 10px auto;
+    margin: 10px 11px;
   }
 
-  .title-img {
-    width: 20%;
-    transform: rotate(25deg);
-    position: absolute;
-    right: 10%;
-    bottom: 25%;
+  .cardImg {
+    width: 200px;
+    height: 400px;
   }
 
-  #features {
-    padding: 100px;
-    text-align: center;
-    background-color: gainsboro;
-    position: relative;
+  .review-poster {
+    margin-top: 30%;
   }
+
 }
 
-/* Big screen devices (889px and above) */
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .container-fluid {
+    padding: 3% 8% 7%;
+  }
+
   .slogan {
     font-family: "Roboto Serif", sans-serif;
     line-height: 1.5;
     size: 4rem;
     font-weight: bolder;
-    margin: 0 15%;
+    margin-left: 15%;
   }
 
   .download-btn {
@@ -421,17 +452,37 @@ button.button:hover {
     outline: none;
   }
 
+  .title-img {
+    width: 18%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 10%;
+  }
+  
+  /* Feature Section */
+  #features {
+    padding: 100px;
+    text-align: center;
+    background-color: gainsboro;
+    position: relative;
+  }
+  
+  .featureCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   .card1 {
-    width: 300px;
+    width: 350px;
     height: 600px;
     background-color: #252a48;
     border-radius: 25px;
-    margin: 10px auto;
+    margin: 10px;
   }
 
   .review-text {
     font-size: 2rem;
-    margin-bottom: 15%;
   }
 
   .title-img {
@@ -439,10 +490,20 @@ button.button:hover {
     transform: rotate(25deg);
     position: absolute;
     right: 10%;
-    bottom: 20%;
+    bottom: 35%;
   }
+
 }
 
-/* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1440px) {
+  .featureCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .review-text {
+    margin-bottom: 10%;
+  }
+
 }
